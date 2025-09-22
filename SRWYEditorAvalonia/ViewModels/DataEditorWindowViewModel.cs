@@ -27,7 +27,7 @@ namespace SRWYEditorAvalonia.ViewModels
             get => selectedNode;
             set
             {
-                if (selectedNode != value)
+                if (true)
                 {
                     selectedNode = value;
                     NodePath.Clear();

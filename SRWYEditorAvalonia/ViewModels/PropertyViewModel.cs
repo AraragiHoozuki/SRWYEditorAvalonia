@@ -245,6 +245,17 @@ namespace SRWYEditorAvalonia.ViewModels
                         {
                             name = $"[{index}] {idName}";
                         }
+                    } else
+                    {
+                        prop = item.GetType().GetProperty("StringForList");
+                        if (prop is not null)
+                        {
+                            var idName = prop.GetValue(item) as string;
+                            if (!string.IsNullOrEmpty(idName))
+                            {
+                                name = $"[{index}] {idName}";
+                            }
+                        }
                     }
                 }
             }
