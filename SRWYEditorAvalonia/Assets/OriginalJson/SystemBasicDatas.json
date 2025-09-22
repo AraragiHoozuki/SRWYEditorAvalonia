@@ -1,0 +1,2283 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 7410748621298124164
+  },
+  "m_Name": "SystemBasicDatas",
+  "listIPTitleData": [
+    {
+      "identificationName": "勇者ライディーン",
+      "id": "BRVRDN",
+      "cursorIds": [],
+      "sortNumber": 1,
+      "bgmIconRobotBasisId": "RIDEEN",
+      "groupId": "BRVRDN",
+      "nameKey": "WNK_BRVRDN",
+      "detailNameKey": "WDK_BRVRDN",
+      "nameJP": "勇者ライディーン",
+      "detailNameJP": "勇者ライディーン",
+      "onDictionaryExist": 1
+    },
+    {
+      "identificationName": "超電磁ロボ コン・バトラーＶ",
+      "id": "CONV",
+      "cursorIds": [],
+      "sortNumber": 2,
+      "bgmIconRobotBasisId": "COMV",
+      "groupId": "CONV",
+      "nameKey": "WNK_CONV",
+      "detailNameKey": "WDK_CONV",
+      "nameJP": "超電磁ロボ コン・バトラーＶ",
+      "detailNameJP": "超電磁ロボ コン・バトラーＶ",
+      "onDictionaryExist": 1
+    },
+    {
+      "identificationName": "聖戦士ダンバイン",
+      "id": "ABDV",
+      "cursorIds": [],
+      "sortNumber": 3,
+      "bgmIconRobotBasisId": "DNBIN",
+      "groupId": "ABDV",
+      "nameKey": "WNK_ABDV",
+      "detailNameKey": "WDK_ABDV",
+      "nameJP": "聖戦士ダンバイン",
+      "detailNameJP": "聖戦士ダンバイン",
+      "onDictionaryExist": 1
+    },
+    {
+      "identificationName": "聖戦士ダンバイン　New Story of AURA BATTLER Dunbine",
+      "id": "DBOVA",
+      "cursorIds": [],
+      "sortNumber": 4,
+      "bgmIconRobotBasisId": "SRBIN",
+      "groupId": "DBOVA",
+      "nameKey": "WNK_DBOVA",
+      "detailNameKey": "WDK_DBOVA",
+      "nameJP": "聖戦士ダンバイン　New Story of AURA BATTLER Dunbine",
+      "detailNameJP": "聖戦士ダンバイン　New Story of AURA BATTLER Dunbine",
+      "onDictionaryExist": 1
+    },
+    {
+      "identificationName": "重戦機エルガイム",
+      "id": "ELGIM",
+      "cursorIds": [],
+      "sortNumber": 5,
+      "bgmIconRobotBasisId": "LGIM",
+      "groupId": "ELGIM",
+      "nameKey": "WNK_ELGIM",
+      "detailNameKey": "WDK_ELGIM",
+      "nameJP": "重戦機エルガイム",
+      "detailNameJP": "重戦機エルガイム",
+      "onDictionaryExist": 1
+    },
+    {
+      "identificationName": "機動戦士Ζガンダム",
+      "id": "ZGN",
+      "cursorIds": [],
+      "sortNumber": 6,
+      "bgmIconRobotBasisId": "ZGN",
+      "groupId": "ZGN",
+      "nameKey": "WNK_ZGN",
+      "detailNameKey": "WDK_ZGN",
+      "nameJP": "機動戦士Ζガンダム",
+      "detailNameJP": "機動戦士Ζガンダム",
+      "onDictionaryExist": 1
+    },
+    {
+      "identificationName": "機動戦士ガンダム 逆襲のシャア",
+      "id": "GNCC",
+      "cursorIds": [],
+      "sortNumber": 7,
+      "bgmIconRobotBasisId": "NGD",
+      "groupId": "GNCC",
+      "nameKey": "WNK_GNCC",
+      "detailNameKey": "WDK_GNCC",
+      "nameJP": "機動戦士ガンダム 逆襲のシャア",
+      "detailNameJP": "機動戦士ガンダム 逆襲のシャア",
+      "onDictionaryExist": 1
+    },
+    {
+      "identificationName": "Ｍ－ＭＳＶ",
+      "id": "MMSV",
+      "cursorIds": [],
+      "sortNumber": 8,
+      "bgmIconRobotBasisId": "MNGD_F",
+      "groupId": "MMSV",
+      "nameKey": "WNK_MMSV",
+      "detailNameKey": "WDK_MMSV",
+      "nameJP": "Ｍ－ＭＳＶ",
+      "detailNameJP": "Ｍ－ＭＳＶ",
+      "onDictionaryExist": 0
+    },
+    {
+      "identificationName": "機動武闘伝Ｇガンダム",
+      "id": "GODGN",
+      "cursorIds": [],
+      "sortNumber": 9,
+      "bgmIconRobotBasisId": "GODGD",
+      "groupId": "GODGN",
+      "nameKey": "WNK_GODGN",
+      "detailNameKey": "WDK_GODGN",
+      "nameJP": "機動武闘伝Ｇガンダム",
+      "detailNameJP": "機動武闘伝Ｇガンダム",
+      "onDictionaryExist": 1
+    },
+    {
+      "identificationName": "新機動戦記ガンダムＷ Endless Waltz",
+      "id": "GNWEW",
+      "cursorIds": [],
+      "sortNumber": 10,
+      "bgmIconRobotBasisId": "WG0_EW",
+      "groupId": "GNWEW",
+      "nameKey": "WNK_GNWEW",
+      "detailNameKey": "WDK_GNWEW",
+      "nameJP": "新機動戦記ガンダムＷ Endless Waltz",
+      "detailNameJP": "新機動戦記ガンダムＷ Endless Waltz",
+      "onDictionaryExist": 1
+    },
+    {
+      "identificationName": "機動戦士ガンダムSEED DESTINY",
+      "id": "GNDE",
+      "cursorIds": [],
+      "sortNumber": 11,
+      "bgmIconRobotBasisId": "DSGD",
+      "groupId": "GNDE",
+      "nameKey": "WNK_GNDE",
+      "detailNameKey": "WDK_GNDE",
+      "nameJP": "機動戦士ガンダムSEED DESTINY",
+      "detailNameJP": "機動戦士ガンダムSEED DESTINY",
+      "onDictionaryExist": 1
+    },
+    {
+      "identificationName": "機動戦士ガンダム 水星の魔女",
+      "id": "GNWOM",
+      "cursorIds": [],
+      "sortNumber": 12,
+      "bgmIconRobotBasisId": "GDARRAL",
+      "groupId": "GNWOM",
+      "nameKey": "WNK_GNWOM",
+      "detailNameKey": "WDK_GNWOM",
+      "nameJP": "機動戦士ガンダム 水星の魔女",
+      "detailNameJP": "機動戦士ガンダム 水星の魔女",
+      "onDictionaryExist": 1
+    },
+    {
+      "identificationName": "マジンカイザー　死闘！暗黒大将軍",
+      "id": "MZKZRDSDG",
+      "cursorIds": [],
+      "sortNumber": 13,
+      "bgmIconRobotBasisId": "MAZINKZR",
+      "groupId": "MZKZRDSDG",
+      "nameKey": "WNK_MZKZRDSDG",
+      "detailNameKey": "WDK_MZKZRDSDG",
+      "nameJP": "マジンカイザー 死闘! 暗黒大将軍",
+      "detailNameJP": "マジンカイザー 死闘! 暗黒大将軍",
+      "onDictionaryExist": 1
+    },
+    {
+      "identificationName": "ゲッターロボ アーク",
+      "id": "GTRARK",
+      "cursorIds": [],
+      "sortNumber": 14,
+      "bgmIconRobotBasisId": "GTRARK",
+      "groupId": "GTRARK",
+      "nameKey": "WNK_GTRARK",
+      "detailNameKey": "WDK_GTRARK",
+      "nameJP": "ゲッターロボ アーク",
+      "detailNameJP": "ゲッターロボ アーク",
+      "onDictionaryExist": 1
+    },
+    {
+      "identificationName": "ダイナミック企画オリジナル",
+      "id": "DYNMCORG",
+      "cursorIds": [],
+      "sortNumber": 15,
+      "bgmIconRobotBasisId": "MAZINKZR",
+      "groupId": "DYNMCORG",
+      "nameKey": "WNK_DYNMCORG",
+      "detailNameKey": "WDK_DYNMCORG",
+      "nameJP": "ダイナミック企画オリジナル",
+      "detailNameJP": "ダイナミック企画オリジナル",
+      "onDictionaryExist": 0
+    },
+    {
+      "identificationName": "銀河機攻隊マジェスティックプリンス",
+      "id": "MJP",
+      "cursorIds": [],
+      "sortNumber": 16,
+      "bgmIconRobotBasisId": "RED5",
+      "groupId": "MJP",
+      "nameKey": "WNK_MJP",
+      "detailNameKey": "WDK_MJP",
+      "nameJP": "銀河機攻隊マジェスティックプリンス",
+      "detailNameJP": "銀河機攻隊マジェスティックプリンス",
+      "onDictionaryExist": 1
+    },
+    {
+      "identificationName": "マクロスΔ",
+      "id": "MCRSDL",
+      "cursorIds": [],
+      "sortNumber": 17,
+      "bgmIconRobotBasisId": "VF31JSGKF",
+      "groupId": "VF31JSGKF",
+      "nameKey": "WNK_MCRSDL",
+      "detailNameKey": "WDK_MCRSDL",
+      "nameJP": "マクロスΔ",
+      "detailNameJP": "マクロスΔ",
+      "onDictionaryExist": 0
+    },
+    {
+      "identificationName": "劇場版マクロスΔ 激情のワルキューレ",
+      "id": "MCRSDLPW",
+      "cursorIds": [],
+      "sortNumber": 18,
+      "bgmIconRobotBasisId": "VF31JGKF",
+      "groupId": "MCRSDLPW",
+      "nameKey": "WNK_MCRSDLPW",
+      "detailNameKey": "WDK_MCRSDLPW",
+      "nameJP": "劇場版マクロスΔ 激情のワルキューレ",
+      "detailNameJP": "劇場版マクロスΔ 激情のワルキューレ",
+      "onDictionaryExist": 1
+    },
+    {
+      "identificationName": "コードギアス 反逆のルルーシュⅢ 皇道",
+      "id": "CGRRRIR",
+      "cursorIds": [],
+      "sortNumber": 19,
+      "bgmIconRobotBasisId": "RRSN",
+      "groupId": "CGRRRIR",
+      "nameKey": "WNK_CGRRRIR",
+      "detailNameKey": "WDK_CGRRRIR",
+      "nameJP": "コードギアス 反逆のルルーシュ Ⅲ 皇道",
+      "detailNameJP": "コードギアス 反逆のルルーシュ Ⅲ 皇道",
+      "onDictionaryExist": 0
+    },
+    {
+      "identificationName": "コードギアス 復活のルルーシュ",
+      "id": "CGRRR",
+      "cursorIds": [],
+      "sortNumber": 20,
+      "bgmIconRobotBasisId": "RRSN",
+      "groupId": "CGRRR",
+      "nameKey": "WNK_CGRRR",
+      "detailNameKey": "WDK_CGRRR",
+      "nameJP": "コードギアス 復活のルルーシュ",
+      "detailNameJP": "コードギアス 復活のルルーシュ",
+      "onDictionaryExist": 1
+    },
+    {
+      "identificationName": "ゴジラ S.P＜シンギュラポイント＞",
+      "id": "GZLSP",
+      "cursorIds": [],
+      "sortNumber": 21,
+      "bgmIconRobotBasisId": "JDJGR",
+      "groupId": "GZLSP",
+      "nameKey": "WNK_GZLSP",
+      "detailNameKey": "WDK_GZLSP",
+      "nameJP": "ゴジラ S.P ＜シンギュラポイント＞",
+      "detailNameJP": "ゴジラ S.P ＜シンギュラポイント＞",
+      "onDictionaryExist": 1
+    },
+    {
+      "identificationName": "SSSS.DYNAZENON",
+      "id": "DYNZNN",
+      "cursorIds": [],
+      "sortNumber": 22,
+      "bgmIconRobotBasisId": "DYNZNON",
+      "groupId": "DYNZNN",
+      "nameKey": "WNK_DYNZNN",
+      "detailNameKey": "WDK_DYNZNN",
+      "nameJP": "SSSS.DYNAZENON",
+      "detailNameJP": "SSSS.DYNAZENON",
+      "onDictionaryExist": 1
+    },
+    {
+      "identificationName": "オリジナル",
+      "id": "ORGNL",
+      "cursorIds": [],
+      "sortNumber": 23,
+      "bgmIconRobotBasisId": "MFCARDNT",
+      "groupId": "ORGNL",
+      "nameKey": "WNK_ORGNL",
+      "detailNameKey": "WDK_ORGNL",
+      "nameJP": "オリジナル",
+      "detailNameJP": "オリジナル",
+      "onDictionaryExist": 0
+    }
+  ],
+  "listGlobalFlag": [
+    {
+      "identificationName": "デバッグ機能を有効にする",
+      "id": "UseDebug"
+    },
+    {
+      "identificationName": "識別名称表示を行う",
+      "id": "UseIdentificationName"
+    },
+    {
+      "identificationName": "デフォルトネームフラグ",
+      "id": "default_name"
+    },
+    {
+      "identificationName": "２周目フラグ",
+      "id": "second"
+    },
+    {
+      "identificationName": "部隊名変更有効フラグ",
+      "id": "team_name_enable"
+    },
+    {
+      "identificationName": "0000A_男主人公フラグ",
+      "id": "M000A_MHERO"
+    },
+    {
+      "identificationName": "0000B_女主人公フラグ",
+      "id": "M000B_FHERO"
+    },
+    {
+      "identificationName": "0000C_カイゼル合体フラグ",
+      "id": "M000C_KAISER_COMBI"
+    },
+    {
+      "identificationName": "000_ムートロン発動フラグ",
+      "id": "M000_MUTRON"
+    },
+    {
+      "identificationName": "000_バイオセンサー（Ζガンダム）発動フラグ",
+      "id": "M000_BIOSENSOR_Z"
+    },
+    {
+      "identificationName": "000_サイコフレーム発動フラグ",
+      "id": "M000_PSYCHOFRAME"
+    },
+    {
+      "identificationName": "000_明鏡止水発動フラグ",
+      "id": "M000_MEIKYOUSHISUI"
+    },
+    {
+      "identificationName": "000_ハイパーモード発動フラグ",
+      "id": "M000_HYPER_MODE"
+    },
+    {
+      "identificationName": "000_スーパーモード発動フラグ",
+      "id": "M000_SUPER_MODE"
+    },
+    {
+      "identificationName": "000_バーサーカーシステム発動フラグ",
+      "id": "M000_BARSERKERSYSTEM"
+    },
+    {
+      "identificationName": "000_ゼロシステム発動フラグ",
+      "id": "M000_ZERO_SYSTEM"
+    },
+    {
+      "identificationName": "000_マジンパワー（マジンカイザー）発動フラグ",
+      "id": "M000_MAZINPOWER_K"
+    },
+    {
+      "identificationName": "000_マジンパワー（マジンエンペラーＧ）発動フラグ",
+      "id": "M000_MAZINPOWER_EG"
+    },
+    {
+      "identificationName": "000_ゲッターの申し子発動フラグ",
+      "id": "M000_GETTER_CHILD"
+    },
+    {
+      "identificationName": "000_ギアスの呪縛発動フラグ",
+      "id": "M000_CURSEOFGEASS"
+    },
+    {
+      "identificationName": "000_SEED（シン）発動フラグ",
+      "id": "M000_SEED_SIN"
+    },
+    {
+      "identificationName": "000_SEED（キラ）発動フラグ",
+      "id": "M000_SEED_KIRA"
+    },
+    {
+      "identificationName": "000_SEED（アスラン）発動フラグ",
+      "id": "M000_SEED_ASURAN"
+    },
+    {
+      "identificationName": "000_SEED（ラクス）発動フラグ",
+      "id": "M000_SEED_LACUS"
+    },
+    {
+      "identificationName": "000_ゲッターアーク変形管理フラグ",
+      "id": "GTRARK"
+    },
+    {
+      "identificationName": "000_ゲッターキリク変形管理フラグ",
+      "id": "GTRKRIK"
+    },
+    {
+      "identificationName": "000_ゲッターカーン変形管理フラグ",
+      "id": "GTRKARN"
+    },
+    {
+      "identificationName": "0001_男第１話フラグ",
+      "id": "M0001_MHERO_START"
+    },
+    {
+      "identificationName": "0001A_エーアデント登録フラグ",
+      "id": "M0001A_AADEMT_JOIN"
+    },
+    {
+      "identificationName": "0001B_チュートリアルフラグ",
+      "id": "M0001B_TUTORIAL"
+    },
+    {
+      "identificationName": "0002_女第１話フラグ",
+      "id": "M0002_FHERO_START"
+    },
+    {
+      "identificationName": "0003_ゲッターアークフラグ１",
+      "id": "M0003_GETARK_1"
+    },
+    {
+      "identificationName": "0003A_アーク登録フラグ",
+      "id": "M0003A_ARK_JOIN"
+    },
+    {
+      "identificationName": "0004_ゲッターアークフラグ２",
+      "id": "M0004_GETARK_2"
+    },
+    {
+      "identificationName": "0004A_第３話終了フラグ",
+      "id": "M0004A_03END"
+    },
+    {
+      "identificationName": "0005_ダイナゼノンフラグ１",
+      "id": "M0005_DYNAZENON_1"
+    },
+    {
+      "identificationName": "0005A_ダイナゼノン登録フラグ",
+      "id": "M0005A_DYNAZENON_JOIN"
+    },
+    {
+      "identificationName": "0006_ダイナゼノンフラグ２",
+      "id": "M0006_DYNAZENON_2"
+    },
+    {
+      "identificationName": "0007_第２章解放フラグ",
+      "id": "M0007_CHAPTER2_OPEN"
+    },
+    {
+      "identificationName": "0008_ライディーン登録フラグ",
+      "id": "M0008_REIDEEN_JOIN"
+    },
+    {
+      "identificationName": "0009_宇宙解放フラグ",
+      "id": "M0009_SPACE_OPEN"
+    },
+    {
+      "identificationName": "0009A_中部隊フラグ",
+      "id": "M0009A_MEDIUM_TEAM"
+    },
+    {
+      "identificationName": "0009B_大部隊フラグ",
+      "id": "M0009B_LARGE_TEAM"
+    },
+    {
+      "identificationName": "0010_キャンベル遺跡フラグ",
+      "id": "M0010_CANBEL_REMAIN"
+    },
+    {
+      "identificationName": "0010A_コンＶ登録フラグ",
+      "id": "M0010A_COMV_JOIN"
+    },
+    {
+      "identificationName": "0010B_兎猿猴初登場フラグ",
+      "id": "M0010B_TOENKO_FIRST"
+    },
+    {
+      "identificationName": "0011_怪獣調査フラグ",
+      "id": "M0011_KAIJU_RESEARCH"
+    },
+    {
+      "identificationName": "0011A_ジェットジャガー登録フラグ",
+      "id": "M0011A_JJAGUAR_JOIN"
+    },
+    {
+      "identificationName": "0011B_怪獣使い接触フラグ",
+      "id": "M0011B_KAIJUUSER_FIRST"
+    },
+    {
+      "identificationName": "0012_特訓フラグ１",
+      "id": "M0012_TRAINING_1"
+    },
+    {
+      "identificationName": "0012A_共通特訓フラグ",
+      "id": "M0012A_TRAINING_COMMON"
+    },
+    {
+      "identificationName": "0013_特訓フラグ２",
+      "id": "M0013_TRAINING_2"
+    },
+    {
+      "identificationName": "0014_シーラ登場フラグ",
+      "id": "M0014_SEERA_FIRST"
+    },
+    {
+      "identificationName": "0014A_グラン・ガラン登録フラグ",
+      "id": "M0014A_GRANGARAN_JOIN"
+    },
+    {
+      "identificationName": "0014B_レッシィイメチェン無しフラグ",
+      "id": "M0014b_RESSY_NOCHANGE"
+    },
+    {
+      "identificationName": "0015_オーラロードフラグ",
+      "id": "M0015_AURAROAD"
+    },
+    {
+      "identificationName": "0015A_シオン登録フラグ",
+      "id": "M0015A_SION_JOIN"
+    },
+    {
+      "identificationName": "0016_ロゴス接触フラグ",
+      "id": "M0016_LOGOS_CONTACT"
+    },
+    {
+      "identificationName": "0016A_チボデー・ジョルジュ登録フラグ",
+      "id": "M0016A_CHIBOJOL_JOIN"
+    },
+    {
+      "identificationName": "0017_中華フラグ",
+      "id": "M0017_CHINESE"
+    },
+    {
+      "identificationName": "0017A_カトル登録フラグ",
+      "id": "M0017A_KATOL_JOIN"
+    },
+    {
+      "identificationName": "0018_北欧フラグ",
+      "id": "M0018_NEUROPE"
+    },
+    {
+      "identificationName": "0018A_カレン・アレンビー登録フラグ",
+      "id": "M0018A_KAREARE_JOIN"
+    },
+    {
+      "identificationName": "0018B_アスラン消息不明フラグ",
+      "id": "M0018B_ASRAN_LOST"
+    },
+    {
+      "identificationName": "0019_オーブフラグ",
+      "id": "M0019_AUBE"
+    },
+    {
+      "identificationName": "0019A_シン登録フラグ",
+      "id": "M0019A_SHIN_JOIN"
+    },
+    {
+      "identificationName": "0020_ロンド・ベルフラグ１",
+      "id": "M0020_LONDBELL_1"
+    },
+    {
+      "identificationName": "0020A_共通ロンド・ベルフラグ",
+      "id": "M0020A_LONDBELL_COMMON"
+    },
+    {
+      "identificationName": "0020B_アムロ登録フラグ",
+      "id": "M0020B_AMRO_JOIN"
+    },
+    {
+      "identificationName": "0021_ロンド・ベルフラグ２",
+      "id": "M0021_LONDBELL_2"
+    },
+    {
+      "identificationName": "0022_ネオ・ジオンフラグ１",
+      "id": "M0022_NZEON_1"
+    },
+    {
+      "identificationName": "0022A_共通ネオ・ジオンフラグ",
+      "id": "M0022A_NZEON_COMMON"
+    },
+    {
+      "identificationName": "0022B_カミーユ登録フラグ",
+      "id": "M0022B_CAMIYU_JOIN"
+    },
+    {
+      "identificationName": "0022C_量産型ν登録フラグ",
+      "id": "M0022D_MASNGUN_JOIN"
+    },
+    {
+      "identificationName": "0023_ネオ・ジオンフラグ２",
+      "id": "M0023_NZEON_2"
+    },
+    {
+      "identificationName": "0024_ヒイロ登録フラグ",
+      "id": "M0024_HEIRO_JOIN"
+    },
+    {
+      "identificationName": "0025_スレッタ登録フラグ",
+      "id": "M0025_SRETTA_JOIN"
+    },
+    {
+      "identificationName": "0025A_ラビッツ登録フラグ",
+      "id": "M0025A_RABBITS_JOIN"
+    },
+    {
+      "identificationName": "0026_マジェプリフラグ",
+      "id": "M0026_MAJEPRI"
+    },
+    {
+      "identificationName": "0027_スターローズフラグ",
+      "id": "M0027_STARROSE"
+    },
+    {
+      "identificationName": "0027A_ゴディニオン登録フラグ",
+      "id": "M0027A_GODNION_JOIN"
+    },
+    {
+      "identificationName": "0027B_テオーリア接触フラグ",
+      "id": "M0027B_TEORIA_FIRST"
+    },
+    {
+      "identificationName": "0028_ジルクスタンフラグ",
+      "id": "M0028_ZILKSTAN"
+    },
+    {
+      "identificationName": "0029_デルタ登録フラグ",
+      "id": "M0029_DELTA_JOIN"
+    },
+    {
+      "identificationName": "0030_第３章解放フラグ",
+      "id": "M0030_CHAPTER3_OPEN"
+    },
+    {
+      "identificationName": "0031_ＥＸ１３フラグ",
+      "id": "M0031_EX13"
+    },
+    {
+      "identificationName": "0031A_エルガイムＭｋ－Ⅱフラグ",
+      "id": "M0031A_LGAIM2"
+    },
+    {
+      "identificationName": "0032_長浜強化フラグ",
+      "id": "M0032_NAGAHAMA_VUP"
+    },
+    {
+      "identificationName": "0032A_ゴッドボイスフラグ",
+      "id": "M0032A_GODVOICE"
+    },
+    {
+      "identificationName": "0033_ドロシーフラグ",
+      "id": "M0033_DOROTHY"
+    },
+    {
+      "identificationName": "0033A_バスターライフルフラグ",
+      "id": "M0033A_BUSTER"
+    },
+    {
+      "identificationName": "0034_デスティニーフラグ",
+      "id": "M0034_DESTINY"
+    },
+    {
+      "identificationName": "0034A_ルナマリア登録フラグ",
+      "id": "M0034A_RUNA_JOIN"
+    },
+    {
+      "identificationName": "0035_新ガンダムフラグ",
+      "id": "M0035_NEWGUNDAM"
+    },
+    {
+      "identificationName": "0035A_Ζνガンダムフラグ",
+      "id": "M0035A_ZETANEW"
+    },
+    {
+      "identificationName": "0035B_ヤザン初登場フラグ",
+      "id": "M0035B_YAZAN_FIRST"
+    },
+    {
+      "identificationName": "0036_初回特典フラグ",
+      "id": "M0036_EARLYBONUS"
+    },
+    {
+      "identificationName": "0036A_Ｖ男主人公フラグ",
+      "id": "M0036A_V_HERO"
+    },
+    {
+      "identificationName": "0036B_来訪者フラグ",
+      "id": "M0036B_VISITOR"
+    },
+    {
+      "identificationName": "0111_シーズンパスフラグ",
+      "id": "M0111_SEASONPASS"
+    },
+    {
+      "identificationName": "0111A_Ｘ男主人公フラグ",
+      "id": "M0111A_X_HERO"
+    },
+    {
+      "identificationName": "0111B_Ｔ男主人公フラグ",
+      "id": "M0111B_T_HERO"
+    },
+    {
+      "identificationName": "0201_南米戦線フラグ１",
+      "id": "M0201_FRONT_SAMERICA_1"
+    },
+    {
+      "identificationName": "0202_南米戦線フラグ２",
+      "id": "M0202_FRONT_SAMERICA_2"
+    },
+    {
+      "identificationName": "0203_南米戦線フラグ３",
+      "id": "M0203_FRONT_SAMERICA_3"
+    },
+    {
+      "identificationName": "0204_南米戦線フラグ４",
+      "id": "M0204_FRONT_SAMERICA_4"
+    },
+    {
+      "identificationName": "0204A_戦後戦線フラグ",
+      "id": "M0204A_AFTERWAR_FRONT"
+    },
+    {
+      "identificationName": "0037_貧乏フラグ",
+      "id": "M0037_POOR"
+    },
+    {
+      "identificationName": "0038_ガルーダ敗北フラグ",
+      "id": "M0038_GALDA_LOSS"
+    },
+    {
+      "identificationName": "0039_ゴジラ予兆フラグ",
+      "id": "M0039_GODZILLA_SIGN"
+    },
+    {
+      "identificationName": "0039A_ＪＪパワーアップフラグ",
+      "id": "M0039A_JJAGUAR_VUP"
+    },
+    {
+      "identificationName": "0040_リリーナ拉致フラグ",
+      "id": "M0040_RERENA_LOST"
+    },
+    {
+      "identificationName": "0040A_トロワ・アルゴ登録フラグ",
+      "id": "M0040A_TROALG_JOIN"
+    },
+    {
+      "identificationName": "0041_エランフラグ",
+      "id": "M0041_ERAN"
+    },
+    {
+      "identificationName": "0041A_オリビー説得フラグ１",
+      "id": "M0041A_OLIBE_TALK_1"
+    },
+    {
+      "identificationName": "0042_甲児登録フラグ",
+      "id": "M0042_KOZI_JOIN"
+    },
+    {
+      "identificationName": "0043_２回目ネオ・ジオンフラグ１",
+      "id": "M0043_2ND_NZEON_1"
+    },
+    {
+      "identificationName": "0043A_共通２回目ネオ・ジオンフラグ",
+      "id": "M0043A_2ND_NZEON_COMMON"
+    },
+    {
+      "identificationName": "0043B_キラ・ゼクス登録フラグ",
+      "id": "M0043B_KIRAZEK_JOIN"
+    },
+    {
+      "identificationName": "0043C_シャア登録フラグ",
+      "id": "M0043C_CHAR_JOIN"
+    },
+    {
+      "identificationName": "0044_２回目ネオ・ジオンフラグ２",
+      "id": "M0044_2ND_NZEON_2"
+    },
+    {
+      "identificationName": "0045_グリッドフラグ",
+      "id": "M0045_GRID"
+    },
+    {
+      "identificationName": "0045A_グリッドナイト登録フラグ",
+      "id": "M0045A_GKNIGHT_JOIN"
+    },
+    {
+      "identificationName": "0046_ゲッター線フラグ",
+      "id": "M0046_GETTERSEN"
+    },
+    {
+      "identificationName": "0046A_敷島登録フラグ",
+      "id": "M0046A_SHIKISHIMA_JOIN"
+    },
+    {
+      "identificationName": "0046B_ＤＧ遭遇フラグ",
+      "id": "M0046B_DG_FIRST"
+    },
+    {
+      "identificationName": "0047_シャディクフラグ",
+      "id": "M0047_SHADEC"
+    },
+    {
+      "identificationName": "0048_ルルーシュ登録フラグ",
+      "id": "M0048_LULUSHU_JOIN"
+    },
+    {
+      "identificationName": "0049_デスアーミーフラグ",
+      "id": "M0049_DEATHARMY"
+    },
+    {
+      "identificationName": "0049A_ウォン遭遇フラグ",
+      "id": "M0049_WON_FIRST"
+    },
+    {
+      "identificationName": "0050_ハイパーモードフラグ",
+      "id": "M0050_HYPERMODE"
+    },
+    {
+      "identificationName": "0050A_明鏡止水フラグ",
+      "id": "M0050A_MEIKYO"
+    },
+    {
+      "identificationName": "0051_ラビッツ連係フラグ",
+      "id": "M0051_RABBITS_FRIEND"
+    },
+    {
+      "identificationName": "0051A_ラビッツフォーメーションフラグ",
+      "id": "M0051A_RABBITS_FORMATION"
+    },
+    {
+      "identificationName": "0052_第４章解放フラグ",
+      "id": "M0052_CHAPTER4_OPEN"
+    },
+    {
+      "identificationName": "0205_地球圏外縁戦線フラグ１",
+      "id": "M0205_FRONT_OUTSIDE_1"
+    },
+    {
+      "identificationName": "0205A_アマネ接触フラグ",
+      "id": "M0205A_AMANE_FIRST"
+    },
+    {
+      "identificationName": "0206_地球圏外縁戦線フラグ２",
+      "id": "M0206_FRONT_OUTSIDE_2"
+    },
+    {
+      "identificationName": "0207_地球圏外縁戦線フラグ３",
+      "id": "M0207_FRONT_OUTSIDE_3"
+    },
+    {
+      "identificationName": "0208_地球圏外縁戦線フラグ４",
+      "id": "M0208_FRONT_OUTSIDE_4"
+    },
+    {
+      "identificationName": "0209_アフリカ戦線フラグ１",
+      "id": "M0209_FRONT_AFRICA_1"
+    },
+    {
+      "identificationName": "0209A_サリィ接触フラグ",
+      "id": "M0209A_SALLY_FIRST"
+    },
+    {
+      "identificationName": "0209B_レディ・アン消息フラグ",
+      "id": "M0209B_LADY_NEWS"
+    },
+    {
+      "identificationName": "0210_アフリカ戦線フラグ２",
+      "id": "M0210_FRONT_AFRICA_2"
+    },
+    {
+      "identificationName": "0211_アフリカ戦線フラグ３",
+      "id": "M0211_FRONT_AFRICA_3"
+    },
+    {
+      "identificationName": "0212_アフリカ戦線フラグ４",
+      "id": "M0212_FRONT_AFRICA_4"
+    },
+    {
+      "identificationName": "0053_悪霊フラグ",
+      "id": "M0053_EVILSPIRIT"
+    },
+    {
+      "identificationName": "0053A_黒花フラグ",
+      "id": "M0053A_BLACKFLOWER"
+    },
+    {
+      "identificationName": "0054_セイヴァース挑戦フラグ",
+      "id": "M0054_SAVER_CHALLENGE"
+    },
+    {
+      "identificationName": "0054A_敵全滅フラグ",
+      "id": "M0054A_TOTAL_DESTRUCTION"
+    },
+    {
+      "identificationName": "0055_五飛迷走フラグ",
+      "id": "M0055_UFEY_LOSTWAY"
+    },
+    {
+      "identificationName": "0055A_フレームコートフラグ",
+      "id": "M0055A_FLAMECOAT"
+    },
+    {
+      "identificationName": "0056_スヴェートフラグ",
+      "id": "M0056_SVEET"
+    },
+    {
+      "identificationName": "0057_イズルキラキラフラグ",
+      "id": "M0057_IZL_KIRAKIRA"
+    },
+    {
+      "identificationName": "0058_カイゼルフラグ",
+      "id": "M0058_KAIZEL"
+    },
+    {
+      "identificationName": "0059_エアリアル改修フラグ",
+      "id": "M0059_AERIAL_VUP"
+    },
+    {
+      "identificationName": "0059A_グエル登録フラグ",
+      "id": "M0059A_GUEL_JOIN"
+    },
+    {
+      "identificationName": "0060_メッサー死亡フラグ",
+      "id": "M0060_MESSA_DEATH"
+    },
+    {
+      "identificationName": "0060A_隠しメッサーフラグ",
+      "id": "M0060A_SECRET_MESSA"
+    },
+    {
+      "identificationName": "0061_ノクトフラグ",
+      "id": "M0061_NOCT"
+    },
+    {
+      "identificationName": "0061A_第５章解放フラグ",
+      "id": "M0061A_CHAPTER5_OPEN"
+    },
+    {
+      "identificationName": "0062_ブルーメフラグ",
+      "id": "M0062_BLOOME"
+    },
+    {
+      "identificationName": "0213_オセアニア戦線フラグ１",
+      "id": "M0213_FRONT_OCEANIA_1"
+    },
+    {
+      "identificationName": "0213A_タラク遭遇フラグ",
+      "id": "M0213A_TARAK_FIRST"
+    },
+    {
+      "identificationName": "0214_オセアニア戦線フラグ２",
+      "id": "M0214_FRONT_OCEANIA_2"
+    },
+    {
+      "identificationName": "0215_オセアニア戦線フラグ３",
+      "id": "M0215_FRONT_OCEANIA_3"
+    },
+    {
+      "identificationName": "0216_オセアニア戦線フラグ４",
+      "id": "M0216_FRONT_OCEANIA_4"
+    },
+    {
+      "identificationName": "0217_ヨーロッパ戦線フラグ１",
+      "id": "M0217_FRONT_EUROPE_1"
+    },
+    {
+      "identificationName": "0218_ヨーロッパ戦線フラグ２",
+      "id": "M0218_FRONT_EUROPE_2"
+    },
+    {
+      "identificationName": "0219_ヨーロッパ戦線フラグ３",
+      "id": "M0219_FRONT_EUROPE_3"
+    },
+    {
+      "identificationName": "0220_ヨーロッパ戦線フラグ４",
+      "id": "M0220_FRONT_EUROPE_4"
+    },
+    {
+      "identificationName": "0063_恐竜帝国フラグ",
+      "id": "M0063_DINOEMPIRE"
+    },
+    {
+      "identificationName": "0063A_戦況フラグ",
+      "id": "M0063A_WARSITUATION"
+    },
+    {
+      "identificationName": "0064_空中騎士団フラグ",
+      "id": "M0064_AIRKNIGHT"
+    },
+    {
+      "identificationName": "0064A_システィス初登場フラグ",
+      "id": "M0064A_SISTIS_FIRST"
+    },
+    {
+      "identificationName": "0065_聖戦士フラグ",
+      "id": "M0065_STFIGHTER"
+    },
+    {
+      "identificationName": "0065A_オーラシュートフラグ",
+      "id": "M0065A_AURASHOOT"
+    },
+    {
+      "identificationName": "0066_ヴェルビンフラグ",
+      "id": "M0066_VELBIN"
+    },
+    {
+      "identificationName": "0067_システィス初交戦フラグ",
+      "id": "M0067_SISTIS_FBATTLE"
+    },
+    {
+      "identificationName": "0067A_完全勝利フラグ",
+      "id": "M0067A_PERFECTWIN"
+    },
+    {
+      "identificationName": "0068_紅塵拡大フラグ",
+      "id": "M0068_REDDUST_WIDE"
+    },
+    {
+      "identificationName": "0069_メンデルフラグ",
+      "id": "M0069_MENDEL"
+    },
+    {
+      "identificationName": "0069A_αアジールフラグ",
+      "id": "M0069A_ALPHA"
+    },
+    {
+      "identificationName": "0070_五飛登録フラグ",
+      "id": "M0070_UFEY_JOIN"
+    },
+    {
+      "identificationName": "0071_ウルベ宣言フラグ",
+      "id": "M0071_ULBE_SPEECH"
+    },
+    {
+      "identificationName": "0072_怨獣復活フラグ",
+      "id": "M0072_DEMON_REVIVAL"
+    },
+    {
+      "identificationName": "0073_ガルーダ迷いフラグ",
+      "id": "M0073_GALDA_LOSTWAY"
+    },
+    {
+      "identificationName": "0074_マリーメイア決着フラグ",
+      "id": "M0074_MARYMEIA_END"
+    },
+    {
+      "identificationName": "0074A_リリーナ登録フラグ",
+      "id": "M0074A_RERENA_JOIN"
+    },
+    {
+      "identificationName": "0075_物干し竿フラグ",
+      "id": "M0075_NOCT_VUP"
+    },
+    {
+      "identificationName": "0075A_第６章解放フラグ",
+      "id": "M0075A_CHAPTER6_OPEN"
+    },
+    {
+      "identificationName": "0075B_ヴァルベルムフラグ",
+      "id": "M0075B_VALBELM"
+    },
+    {
+      "identificationName": "0075C_イザナフラグ",
+      "id": "M0075C_IZANA"
+    },
+    {
+      "identificationName": "0076_二刀流フラグ",
+      "id": "M0076_BLOOME_VUP"
+    },
+    {
+      "identificationName": "0112_サイＶパワーアップフラグ",
+      "id": "M0112_CYV_VUP"
+    },
+    {
+      "identificationName": "0113_ＸＴパワーアップフラグ",
+      "id": "M0113_XT_VUP"
+    },
+    {
+      "identificationName": "0221_北米戦線フラグ１",
+      "id": "M0221_FRONT_NAMERICA_1"
+    },
+    {
+      "identificationName": "0222_北米戦線フラグ２",
+      "id": "M0222_FRONT_NAMERICA_2"
+    },
+    {
+      "identificationName": "0223_北米戦線フラグ３",
+      "id": "M0223_FRONT_NAMERICA_3"
+    },
+    {
+      "identificationName": "0224_北米戦線フラグ４",
+      "id": "M0224_FRONT_NAMERICA_4"
+    },
+    {
+      "identificationName": "0225_アジア戦線フラグ１",
+      "id": "M0225_FRONT_ASIA_1"
+    },
+    {
+      "identificationName": "0225A_翔遭遇フラグ",
+      "id": "M0225A_SHO_FIRST"
+    },
+    {
+      "identificationName": "0226_アジア戦線フラグ２",
+      "id": "M0226_FRONT_ASIA_2"
+    },
+    {
+      "identificationName": "0227_アジア戦線フラグ３",
+      "id": "M0227_FRONT_ASIA_3"
+    },
+    {
+      "identificationName": "0228_アジア戦線フラグ４",
+      "id": "M0228_FRONT_ASIA_4"
+    },
+    {
+      "identificationName": "0077_星の歌フラグ",
+      "id": "M0077_STARSONG"
+    },
+    {
+      "identificationName": "0077A_ミナフラグ",
+      "id": "M0077A_MINA"
+    },
+    {
+      "identificationName": "0078_過去ダイブフラグ",
+      "id": "M0078_PASTDIVE"
+    },
+    {
+      "identificationName": "0078A_ムートロンフラグ",
+      "id": "M0078A_MOOTRON"
+    },
+    {
+      "identificationName": "0079_魔神パワーアップフラグ",
+      "id": "M0079_MAZIN_VUP"
+    },
+    {
+      "identificationName": "0080_ギワザ反乱フラグ",
+      "id": "M0080_GIWAZA_REBELLION"
+    },
+    {
+      "identificationName": "0080A_オリビー説得フラグ２",
+      "id": "M0080A_OLIBE_TALK_2"
+    },
+    {
+      "identificationName": "0080B_オリビー登録フラグ",
+      "id": "M0080B_OLIBE_JOIN"
+    },
+    {
+      "identificationName": "0081_システィス挑戦フラグ",
+      "id": "M0081_SISTIS_CHALLENGE"
+    },
+    {
+      "identificationName": "0082_システィス激怒フラグ",
+      "id": "M0082_SISTIS_RAGE"
+    },
+    {
+      "identificationName": "0082A_システィス仲間入りフラグ",
+      "id": "M0082A_SISTIS_FRIEND"
+    },
+    {
+      "identificationName": "0083_未来ジャンプフラグ",
+      "id": "M0083_FUTURE_JUMP"
+    },
+    {
+      "identificationName": "0084_ラー・ヴァル正体フラグ",
+      "id": "M0084_RAVAL_SECRET"
+    },
+    {
+      "identificationName": "0085_カムイ反乱フラグ",
+      "id": "M0085_KAMUI_REBELLION"
+    },
+    {
+      "identificationName": "0085A_東方不敗登録フラグ",
+      "id": "M0085A_TOUHOU_JOIN"
+    },
+    {
+      "identificationName": "0085B_東方不敗登録フラグ正",
+      "id": "M0085B_TOUHOU_JOIN_R"
+    },
+    {
+      "identificationName": "0085C_東方不敗登録フラグ特",
+      "id": "M0085C_TOUHOU_JOIN_S"
+    },
+    {
+      "identificationName": "0086_ネグシス決起フラグ",
+      "id": "M0086_NEGSIS_STAND"
+    },
+    {
+      "identificationName": "0087_第７章解放フラグ",
+      "id": "M0087_CHAPTER7_OPEN"
+    },
+    {
+      "identificationName": "0088_ネバンリンナ挑戦フラグ",
+      "id": "M0088_NEBAN_CHALLENGE"
+    },
+    {
+      "identificationName": "0088A_迷惑来訪者フラグ",
+      "id": "M0088A_VISITOR"
+    },
+    {
+      "identificationName": "0088B_カールレウムチャレンジフラグ",
+      "id": "M0088B_KALREUM_CHALLENGE"
+    },
+    {
+      "identificationName": "0089_エンデ挑戦フラグ",
+      "id": "M0089_ENDE_CHALLENGE"
+    },
+    {
+      "identificationName": "0090_ダイマ挑戦フラグ",
+      "id": "M0090_DAIMA_CHALLENGE"
+    },
+    {
+      "identificationName": "0091_カールレウム登録フラグ",
+      "id": "M0091_KALREUM_JOIN"
+    },
+    {
+      "identificationName": "0092_ネバンリンナ敗北フラグ",
+      "id": "M0092_NEBAN_LOSS"
+    },
+    {
+      "identificationName": "0093_エンデ敗北フラグ",
+      "id": "M0093_ENDE_LOSS"
+    },
+    {
+      "identificationName": "0094_ダイマ敗北フラグ",
+      "id": "M0094_DAIMA_LOSS"
+    },
+    {
+      "identificationName": "0229_西日本戦線フラグ１",
+      "id": "M0229_FRONT_WJAPAN_1"
+    },
+    {
+      "identificationName": "0230_西日本戦線フラグ２",
+      "id": "M0230_FRONT_WJAPAN_2"
+    },
+    {
+      "identificationName": "0231_西日本戦線フラグ３",
+      "id": "M0231_FRONT_WJAPAN_3"
+    },
+    {
+      "identificationName": "0232_西日本戦線フラグ４",
+      "id": "M0232_FRONT_WJAPAN_4"
+    },
+    {
+      "identificationName": "0095_ゴジラ初戦フラグ",
+      "id": "M0095_GODZILLA_FBATTLE"
+    },
+    {
+      "identificationName": "0096_ウルガル決着フラグ",
+      "id": "M0096_ULGAL_END"
+    },
+    {
+      "identificationName": "0096A_ワルキューレ離脱フラグ",
+      "id": "M0096A_WALKYRIE_LOST"
+    },
+    {
+      "identificationName": "0097_ゴジラ決着フラグ１",
+      "id": "M0097_GODZILLA_END_1"
+    },
+    {
+      "identificationName": "0097A_共通ゴジラ決着フラグ",
+      "id": "M0097A_GODZILLA_END_COMMON"
+    },
+    {
+      "identificationName": "0097B_メイ登録フラグ",
+      "id": "M0097B_MEI_JOIN"
+    },
+    {
+      "identificationName": "0098_ゴジラ決着フラグ２",
+      "id": "M0098_GODZILLA_END_2"
+    },
+    {
+      "identificationName": "0099_ダイナゼノン決着フラグ",
+      "id": "M0099_DYNAZENON_END"
+    },
+    {
+      "identificationName": "0099A_白ダイナゼノンフラグ",
+      "id": "M0099A_WHITE_DYNAZENON"
+    },
+    {
+      "identificationName": "0100_外宇宙決着フラグ",
+      "id": "M0100_OUTERSPACE_END"
+    },
+    {
+      "identificationName": "0100A_バーン登録フラグ",
+      "id": "M0100A_BURN_JOIN"
+    },
+    {
+      "identificationName": "0100B_ネイ登録フラグ",
+      "id": "M0100B_NEI_JOIN"
+    },
+    {
+      "identificationName": "0100C_怪獣使い登録フラグ",
+      "id": "M0100C_KAIJUUSER_JOIN"
+    },
+    {
+      "identificationName": "0101_ラストヴァルベルムフラグ",
+      "id": "M0101_LAST_VALBELM"
+    },
+    {
+      "identificationName": "0102_ラストイザナフラグ",
+      "id": "M0102_LAST_IZANA"
+    },
+    {
+      "identificationName": "0103_冥帝決着フラグ１",
+      "id": "M0103_DEMON_END_1"
+    },
+    {
+      "identificationName": "0103A_共通冥帝決着フラグ",
+      "id": "M0103A_DEMON_END_COMMON"
+    },
+    {
+      "identificationName": "0103B_レムリアフラグ",
+      "id": "M0103B_REMRIA"
+    },
+    {
+      "identificationName": "0104_アクシズ落としフラグ１",
+      "id": "M0104_AXIS_1"
+    },
+    {
+      "identificationName": "0105_シロッコ決着フラグ１",
+      "id": "M0105_SIROCO_END_1"
+    },
+    {
+      "identificationName": "0106_ラー・ヴァル決着フラグ",
+      "id": "M0106_RAVAL_END"
+    },
+    {
+      "identificationName": "0106A_エンディングフラグ",
+      "id": "M0106A_ENDING"
+    },
+    {
+      "identificationName": "0107_シロッコ決着フラグ２",
+      "id": "M0107_SIROCCO_END_2"
+    },
+    {
+      "identificationName": "0108_冥帝決着フラグ２",
+      "id": "M0108_DEMON_END_2"
+    },
+    {
+      "identificationName": "0109_アクシズ落としフラグ２",
+      "id": "M0109_AXIS_2"
+    },
+    {
+      "identificationName": "0110_イザナ決着フラグ",
+      "id": "M0110_IZANA_END"
+    },
+    {
+      "identificationName": "0301_遺産１－Ａフラグ",
+      "id": "M0301_LEGACY_1A"
+    },
+    {
+      "identificationName": "0301A_遺産初回フラグ",
+      "id": "M0301A_LEGACY_FIRST"
+    },
+    {
+      "identificationName": "0302_遺産１－Ｂフラグ",
+      "id": "M0302_LEGACY_1B"
+    },
+    {
+      "identificationName": "0303_遺産１－Ｃフラグ",
+      "id": "M0303_LEGACY_1C"
+    },
+    {
+      "identificationName": "0304_遺産２－Ａフラグ",
+      "id": "M0304_LEGACY_2A"
+    },
+    {
+      "identificationName": "0305_遺産２－Ｂフラグ",
+      "id": "M0305_LEGACY_2B"
+    },
+    {
+      "identificationName": "0306_遺産２－Ｃフラグ",
+      "id": "M0306_LEGACY_2V"
+    },
+    {
+      "identificationName": "0307_遺産３－Ａフラグ",
+      "id": "M0307_LEGACY_3A"
+    },
+    {
+      "identificationName": "0308_遺産３－Ｂフラグ",
+      "id": "M0308_LEGACY_3B"
+    },
+    {
+      "identificationName": "0309_遺産３－Ｃフラグ",
+      "id": "M0309_LEGACY_3C"
+    },
+    {
+      "identificationName": "0310_遺産４－Ａフラグ",
+      "id": "M0310_LEGACY_4A"
+    },
+    {
+      "identificationName": "0311_遺産４－Ｂフラグ",
+      "id": "M0311_LEGACY_4B"
+    },
+    {
+      "identificationName": "0312_遺産４－Ｃフラグ",
+      "id": "M0312_LEGACY_4C"
+    },
+    {
+      "identificationName": "0313_遺産５－Ａフラグ",
+      "id": "M0313_LEGACY_5A"
+    },
+    {
+      "identificationName": "0314_遺産５－Ｂフラグ",
+      "id": "M0314_LEGACY_5B"
+    },
+    {
+      "identificationName": "0315_遺産５－Ｃフラグ",
+      "id": "M0315_LEGACY_5C"
+    },
+    {
+      "identificationName": "0316_遺産６－Ａフラグ",
+      "id": "M0316_LEGACY_6A"
+    },
+    {
+      "identificationName": "0317_遺産６－Ｂフラグ",
+      "id": "M0317_LEGACY_6B"
+    },
+    {
+      "identificationName": "0318_遺産６－Ｃフラグ",
+      "id": "M0318_LEGACY_6C"
+    },
+    {
+      "identificationName": "0319_遺産７－Ａフラグ",
+      "id": "M0319_LEGACY_7A"
+    },
+    {
+      "identificationName": "0320_遺産７－Ｂフラグ",
+      "id": "M0320_LEGACY_7B"
+    },
+    {
+      "identificationName": "0321_遺産７－Ｃフラグ",
+      "id": "M0321_LEGACY_7C"
+    },
+    {
+      "identificationName": "0322_遺産８－Ａフラグ",
+      "id": "M0322_LEGACY_8A"
+    },
+    {
+      "identificationName": "0323_遺産８－Ｂフラグ",
+      "id": "M0323_LEGACY_8B"
+    },
+    {
+      "identificationName": "0324_遺産８－Ｃフラグ",
+      "id": "M0324_LEGACY_8C"
+    },
+    {
+      "identificationName": "0325_遺産９－Ａフラグ",
+      "id": "M0325_LEGACY_9A"
+    },
+    {
+      "identificationName": "0326_遺産９－Ｂフラグ",
+      "id": "M0326_LEGACY_9B"
+    },
+    {
+      "identificationName": "0327_遺産９－Ｃフラグ",
+      "id": "M0327_LEGACY_9C"
+    },
+    {
+      "identificationName": "0328_遺産１０－Ａフラグ",
+      "id": "M0328_LEGACY_10A"
+    },
+    {
+      "identificationName": "0329_遺産１０－Ｂフラグ",
+      "id": "M0329_LEGACY_10B"
+    },
+    {
+      "identificationName": "0330_遺産１０－Ｃフラグ",
+      "id": "M0330_LEGACY_10C"
+    },
+    {
+      "identificationName": "0401_挑戦宇宙１フラグ",
+      "id": "M0401_TRY_S1"
+    },
+    {
+      "identificationName": "0402_挑戦地上１フラグ",
+      "id": "M0402_TRY_G1"
+    },
+    {
+      "identificationName": "0403_挑戦宇宙２フラグ",
+      "id": "M0403_TRY_S2"
+    },
+    {
+      "identificationName": "0404_挑戦地上２フラグ",
+      "id": "M0404_TRY_G2"
+    },
+    {
+      "identificationName": "0405_挑戦宇宙３フラグ",
+      "id": "M0405_TRY_S3"
+    },
+    {
+      "identificationName": "0406_挑戦地上３フラグ",
+      "id": "M0406_TRY_G3"
+    },
+    {
+      "identificationName": "0407_挑戦宇宙４フラグ",
+      "id": "M0407_TRY_S4"
+    },
+    {
+      "identificationName": "0408_挑戦地上４フラグ",
+      "id": "M0408_TRY_G4"
+    },
+    {
+      "identificationName": "0409_挑戦宇宙５フラグ",
+      "id": "M0409_TRY_S5"
+    },
+    {
+      "identificationName": "0410_挑戦地上５フラグ",
+      "id": "M0410_TRY_G5"
+    },
+    {
+      "identificationName": "1001_ボーナス０１クリアフラグ",
+      "id": "M1001_BONUS_01"
+    },
+    {
+      "identificationName": "1002_ボーナス０２クリアフラグ",
+      "id": "M1002_BONUS_02"
+    },
+    {
+      "identificationName": "1003_ボーナス０３クリアフラグ",
+      "id": "M1003_BONUS_03"
+    },
+    {
+      "identificationName": "1004_ボーナス０４クリアフラグ",
+      "id": "M1004_BONUS_04"
+    },
+    {
+      "identificationName": "1005_ボーナス０５クリアフラグ",
+      "id": "M1005_BONUS_05"
+    },
+    {
+      "identificationName": "1006_ボーナス０６クリアフラグ",
+      "id": "M1006_BONUS_06"
+    },
+    {
+      "identificationName": "1007_ボーナス０７クリアフラグ",
+      "id": "M1007_BONUS_07"
+    },
+    {
+      "identificationName": "1008_ボーナス０８クリアフラグ",
+      "id": "M1008_BONUS_08"
+    },
+    {
+      "identificationName": "1009_ボーナス０９クリアフラグ",
+      "id": "M1009_BONUS_09"
+    },
+    {
+      "identificationName": "1010_ボーナス１０クリアフラグ",
+      "id": "M1010_BONUS_10"
+    },
+    {
+      "identificationName": "1011_ボーナス１１クリアフラグ",
+      "id": "M1011_BONUS_11"
+    },
+    {
+      "identificationName": "1012_ボーナス１２クリアフラグ",
+      "id": "M1012_BONUS_12"
+    },
+    {
+      "identificationName": "1013_ボーナス１３クリアフラグ",
+      "id": "M1013_BONUS_13"
+    },
+    {
+      "identificationName": "1014_ボーナス１４クリアフラグ",
+      "id": "M1014_BONUS_14"
+    },
+    {
+      "identificationName": "1015_ボーナス１５クリアフラグ",
+      "id": "M1015_BONUS_15"
+    },
+    {
+      "identificationName": "500_洸トークフラグ",
+      "id": "M0500_AKIRA_TALK"
+    },
+    {
+      "identificationName": "501_豹馬トークフラグ",
+      "id": "M0501_HYOMA_TALK"
+    },
+    {
+      "identificationName": "502_カミーユトークフラグ",
+      "id": "M0502_CAMIYU_TALK"
+    },
+    {
+      "identificationName": "503_ファトークフラグ",
+      "id": "M0503_FA_TALK"
+    },
+    {
+      "identificationName": "504_エマトークフラグ",
+      "id": "M0504_EMA_TALK"
+    },
+    {
+      "identificationName": "505_アムロトークフラグ",
+      "id": "M0505_AMURO_TALK"
+    },
+    {
+      "identificationName": "506_ブライトトークフラグ",
+      "id": "M0506_BRIGHT_TALK"
+    },
+    {
+      "identificationName": "507_シャアトークフラグ",
+      "id": "M0507_CHAR_TALK"
+    },
+    {
+      "identificationName": "508_クェストークフラグ",
+      "id": "M0508_QES_TALK"
+    },
+    {
+      "identificationName": "509_ギュネイトークフラグ",
+      "id": "M0509_GUNEY_TALK"
+    },
+    {
+      "identificationName": "510_ドモントークフラグ",
+      "id": "M0510_DOMON_TALK"
+    },
+    {
+      "identificationName": "511_レイントークフラグ",
+      "id": "M0511_LAIN_TALK"
+    },
+    {
+      "identificationName": "512_チボデートークフラグ",
+      "id": "M0512_TIBODY_TALK"
+    },
+    {
+      "identificationName": "513_サイ・サイシートークフラグ",
+      "id": "M0513_CYCYC_TALK"
+    },
+    {
+      "identificationName": "514_ジョルジュトークフラグ",
+      "id": "M0514_JOLJ_TALK"
+    },
+    {
+      "identificationName": "515_アルゴトークフラグ",
+      "id": "M0515_ALGO_TALK"
+    },
+    {
+      "identificationName": "516_アレンビートークフラグ",
+      "id": "M0516_ARENBY_TALK"
+    },
+    {
+      "identificationName": "517_東方不敗トークフラグ",
+      "id": "M0517_TOHO_TALK"
+    },
+    {
+      "identificationName": "518_ヒイロトークフラグ",
+      "id": "M0518_HYRO_TALK"
+    },
+    {
+      "identificationName": "519_デュオトークフラグ",
+      "id": "M0519_DUO_TALK"
+    },
+    {
+      "identificationName": "520_トロワトークフラグ",
+      "id": "M0520_TOROWA_TALK"
+    },
+    {
+      "identificationName": "521_カトルトークフラグ",
+      "id": "M0521_CATOL_TALK"
+    },
+    {
+      "identificationName": "522_五飛トークフラグ",
+      "id": "M0522_UFEY_TALK"
+    },
+    {
+      "identificationName": "523_ゼクストークフラグ",
+      "id": "M0523_ZEKUS_TALK"
+    },
+    {
+      "identificationName": "524_ノイントークフラグ",
+      "id": "M0524_NOIN_TALK"
+    },
+    {
+      "identificationName": "525_シントークフラグ",
+      "id": "M0525_SIN_TALK"
+    },
+    {
+      "identificationName": "526_ルナマリアトークフラグ",
+      "id": "M0526_RUNA_TALK"
+    },
+    {
+      "identificationName": "527_キラトークフラグ",
+      "id": "M0527_KIRA_TALK"
+    },
+    {
+      "identificationName": "528_アスラントークフラグ",
+      "id": "M0528_ASRAN_TALK"
+    },
+    {
+      "identificationName": "529_ラクストークフラグ",
+      "id": "M0529_RAKUS_TALK"
+    },
+    {
+      "identificationName": "530_スレッタトークフラグ",
+      "id": "M0530_SRETTA_TALK"
+    },
+    {
+      "identificationName": "531_チュチュトークフラグ",
+      "id": "M0531_CHUCHU_TALK"
+    },
+    {
+      "identificationName": "532_グエルトークフラグ",
+      "id": "M0532_GUEL_TALK"
+    },
+    {
+      "identificationName": "533_ショウトークフラグ",
+      "id": "M0533_SHOU_TALK"
+    },
+    {
+      "identificationName": "534_マーベルトークフラグ",
+      "id": "M0534_MARVEL_TALK"
+    },
+    {
+      "identificationName": "535_シーラトークフラグ",
+      "id": "M0535_SHIRA_TALK"
+    },
+    {
+      "identificationName": "536_トッドトークフラグ",
+      "id": "M0536_TOD_TALK"
+    },
+    {
+      "identificationName": "537_バーントークフラグ",
+      "id": "M0537_BURN_TALK"
+    },
+    {
+      "identificationName": "538_シオントークフラグ",
+      "id": "M0538_SION_TALK"
+    },
+    {
+      "identificationName": "539_ダバトークフラグ",
+      "id": "M0539_DABA_TALK"
+    },
+    {
+      "identificationName": "540_アムトークフラグ",
+      "id": "M0540_AMU_TALK"
+    },
+    {
+      "identificationName": "541_レッシィトークフラグ",
+      "id": "M0541_RESSY_TALK"
+    },
+    {
+      "identificationName": "542_ギャブレートークフラグ",
+      "id": "M0542_GABREY_TALK"
+    },
+    {
+      "identificationName": "543_オリビートークフラグ",
+      "id": "M0543_OLBY_TALK"
+    },
+    {
+      "identificationName": "544_ネイトークフラグ",
+      "id": "M0544_NEI_TALK"
+    },
+    {
+      "identificationName": "545_甲児トークフラグ",
+      "id": "M0545_KOUJI_TALK"
+    },
+    {
+      "identificationName": "546_鉄也トークフラグ",
+      "id": "M0546_TETSU_TALK"
+    },
+    {
+      "identificationName": "547_拓馬トークフラグ",
+      "id": "M0547_TAKU_TALK"
+    },
+    {
+      "identificationName": "548_カムイトークフラグ",
+      "id": "M0548_KAMUI_TALK"
+    },
+    {
+      "identificationName": "549_獏トークフラグ",
+      "id": "M0549_BAKU_TALK"
+    },
+    {
+      "identificationName": "550_ハヤテトークフラグ",
+      "id": "M0550_HAYATE_TALK"
+    },
+    {
+      "identificationName": "551_ミラージュトークフラグ",
+      "id": "M0551_MIRAGE_TALK"
+    },
+    {
+      "identificationName": "552_アラドトークフラグ",
+      "id": "M0552_ARAD_TALK"
+    },
+    {
+      "identificationName": "553_メッサートークフラグ",
+      "id": "M0553_MESSY_TALK"
+    },
+    {
+      "identificationName": "554_チャックトークフラグ",
+      "id": "M0554_CHAK_TALK"
+    },
+    {
+      "identificationName": "555_アーネストトークフラグ",
+      "id": "M0555_ARNEST_TALK"
+    },
+    {
+      "identificationName": "556_ルルーシュトークフラグ",
+      "id": "M0556_LULU_TALK"
+    },
+    {
+      "identificationName": "557_スザクトークフラグ",
+      "id": "M0557_SZAK_TALK"
+    },
+    {
+      "identificationName": "558_カレントークフラグ",
+      "id": "M0558_KAREN_TALK"
+    },
+    {
+      "identificationName": "559_イズルトークフラグ",
+      "id": "M0559_IZL_TALK"
+    },
+    {
+      "identificationName": "560_アサギトークフラグ",
+      "id": "M0560_ASG_TALK"
+    },
+    {
+      "identificationName": "561_ケイトークフラグ",
+      "id": "M0561_KEY_TALK"
+    },
+    {
+      "identificationName": "562_タマキトークフラグ",
+      "id": "M0562_TAMA_TALK"
+    },
+    {
+      "identificationName": "563_スルガトークフラグ",
+      "id": "M0563_SLGA_TALK"
+    },
+    {
+      "identificationName": "564_アンジュトークフラグ",
+      "id": "M0564_ANJU_TALK"
+    },
+    {
+      "identificationName": "565_ランディトークフラグ",
+      "id": "M0565_RANDY_TALK"
+    },
+    {
+      "identificationName": "566_スズカゼトークフラグ",
+      "id": "M0566_SUZU_TALK"
+    },
+    {
+      "identificationName": "567_ジェットジャガートークフラグ",
+      "id": "M0567_JET_TALK"
+    },
+    {
+      "identificationName": "568_ガウマトークフラグ",
+      "id": "M0568_GAUMA_TALK"
+    },
+    {
+      "identificationName": "569_グリッドナイトトークフラグ",
+      "id": "M0569_GKNIGHT_TALK"
+    },
+    {
+      "identificationName": "570_クロストークフラグ",
+      "id": "M0570_CROSS_TALK"
+    },
+    {
+      "identificationName": "571_クロスＳトークフラグ",
+      "id": "M0571_CROSSSUB_TALK"
+    },
+    {
+      "identificationName": "572_フォルテトークフラグ",
+      "id": "M0572_FORTE_TALK"
+    },
+    {
+      "identificationName": "573_フォルテＳトークフラグ",
+      "id": "M0573_FORTESUB_TALK"
+    },
+    {
+      "identificationName": "574_エチカトークフラグ",
+      "id": "M0574_ECHIKA_TALK"
+    },
+    {
+      "identificationName": "575_セイヴァーストークフラグ",
+      "id": "M0575_SEIV_TALK"
+    },
+    {
+      "identificationName": "576_カールレウムトークフラグ",
+      "id": "M0576_KARL_TALK"
+    },
+    {
+      "identificationName": "577_マサキトークフラグ",
+      "id": "M0577_MASA_TALK"
+    },
+    {
+      "identificationName": "578_ソウジトークフラグ",
+      "id": "M0578_SOJI_TALK"
+    },
+    {
+      "identificationName": "579_チトセトークフラグ",
+      "id": "M0579_CHIT_TALK"
+    },
+    {
+      "identificationName": "580_イオリトークフラグ",
+      "id": "M0580_IORI_TALK"
+    },
+    {
+      "identificationName": "581_アマリトークフラグ",
+      "id": "M0581_AMARI_TALK"
+    },
+    {
+      "identificationName": "582_サイゾウトークフラグ",
+      "id": "M0582_SAIZO_TALK"
+    },
+    {
+      "identificationName": "583_サギリトークフラグ",
+      "id": "M0583_SAGIRI_TALK"
+    },
+    {
+      "identificationName": "584_サイゾウＳトークフラグ",
+      "id": "M0584_SAIZOSUB_TALK"
+    },
+    {
+      "identificationName": "585_サギリＳトークフラグ",
+      "id": "M0585_SAGIRISUB_TALK"
+    },
+    {
+      "identificationName": "586_シズムＦトークフラグ",
+      "id": "M0586_SIZM_TALK"
+    },
+    {
+      "identificationName": "700_マリトークフラグ",
+      "id": "M0700_MARI_TALK"
+    },
+    {
+      "identificationName": "701_玲子トークフラグ",
+      "id": "M0701_REIKO_TALK"
+    },
+    {
+      "identificationName": "702_ロペットトークフラグ",
+      "id": "M0702_ROPET_TALK"
+    },
+    {
+      "identificationName": "703_アストナージトークフラグ",
+      "id": "M0703_ASTNA_TALK"
+    },
+    {
+      "identificationName": "704_チェーントークフラグ",
+      "id": "M0704_CHAIN_TALK"
+    },
+    {
+      "identificationName": "705_ストーカートークフラグ",
+      "id": "M0705_STALK_TALK"
+    },
+    {
+      "identificationName": "706_ヒルデトークフラグ",
+      "id": "M0706_HYLDE_TALK"
+    },
+    {
+      "identificationName": "707_リリーナトークフラグ",
+      "id": "M0707_RIRINA_TALK"
+    },
+    {
+      "identificationName": "708_ミリアリアトークフラグ",
+      "id": "M0708_MIRIA_TALK"
+    },
+    {
+      "identificationName": "709_ミオリネトークフラグ",
+      "id": "M0709_MIORINE_TALK"
+    },
+    {
+      "identificationName": "710_ニカトークフラグ",
+      "id": "M0710_NIKA_TALK"
+    },
+    {
+      "identificationName": "711_ニートークフラグ",
+      "id": "M0711_NEE_TALK"
+    },
+    {
+      "identificationName": "712_レムルトークフラグ",
+      "id": "M0712_REMUL_TALK"
+    },
+    {
+      "identificationName": "713_キャオトークフラグ",
+      "id": "M0713_KYAO_TALK"
+    },
+    {
+      "identificationName": "714_さやかトークフラグ",
+      "id": "M0714_SAYAKA_TALK"
+    },
+    {
+      "identificationName": "715_ボストークフラグ",
+      "id": "M0715_BOSS_TALK"
+    },
+    {
+      "identificationName": "716_敷島トークフラグ",
+      "id": "M0716_SHIKI_TALK"
+    },
+    {
+      "identificationName": "717_フレイアトークフラグ",
+      "id": "M0717_FREIA_TALK"
+    },
+    {
+      "identificationName": "718_美雲トークフラグ",
+      "id": "M0718_MIKUMO_TALK"
+    },
+    {
+      "identificationName": "719_カナメトークフラグ",
+      "id": "M0719_KANAME_TALK"
+    },
+    {
+      "identificationName": "720_マキナトークフラグ",
+      "id": "M0720_MAKINA_TALK"
+    },
+    {
+      "identificationName": "721_レイナトークフラグ",
+      "id": "M0721_REINA_TALK"
+    },
+    {
+      "identificationName": "722_ロイドトークフラグ",
+      "id": "M0722_ROYD_TALK"
+    },
+    {
+      "identificationName": "723_ジェレミアトークフラグ",
+      "id": "M0723_JERE_TALK"
+    },
+    {
+      "identificationName": "724_扇トークフラグ",
+      "id": "M0724_OGI_TALK"
+    },
+    {
+      "identificationName": "725_レイカトークフラグ",
+      "id": "M0725_REIKA_TALK"
+    },
+    {
+      "identificationName": "726_テオーリアトークフラグ",
+      "id": "M0726_TEO_TALK"
+    },
+    {
+      "identificationName": "727_オオタキトークフラグ",
+      "id": "M0727_OOTAKI_TALK"
+    },
+    {
+      "identificationName": "728_メイトークフラグ",
+      "id": "M0728_MEI_TALK"
+    },
+    {
+      "identificationName": "729_ちせトークフラグ",
+      "id": "M0729_CHISE_TALK"
+    },
+    {
+      "identificationName": "730_２代目トークフラグ",
+      "id": "M0730_2DAI_TALK"
+    },
+    {
+      "identificationName": "731_レンレントークフラグ",
+      "id": "M0731_RENREN_TALK"
+    },
+    {
+      "identificationName": "732_アイティトークフラグ",
+      "id": "M0732_IT_TALK"
+    },
+    {
+      "identificationName": "733_クッキントークフラグ",
+      "id": "M0733_COOKIN_TALK"
+    },
+    {
+      "identificationName": "800_コンゴジトークフラグ",
+      "id": "M0800_CON_GOZI_TALK"
+    },
+    {
+      "identificationName": "801_マジェ水トークフラグ",
+      "id": "M0801_MAJE_SUI_TALK"
+    },
+    {
+      "identificationName": "802_ライエルトークフラグ",
+      "id": "M0802_RAI_ELG_TALK"
+    },
+    {
+      "identificationName": "803_Ｗギアストークフラグ",
+      "id": "M0803_WING_GEA_TALK"
+    },
+    {
+      "identificationName": "804_Ｇダントークフラグ",
+      "id": "M0804_GGUN_DUNB_TALK"
+    },
+    {
+      "identificationName": "805_Ｚアークトークフラグ",
+      "id": "M0805_ZETA_ARK_TALK"
+    },
+    {
+      "identificationName": "806_種サートークフラグ",
+      "id": "M0806_SEED_SURB_TALK"
+    },
+    {
+      "identificationName": "807_シャアデルタトークフラグ",
+      "id": "M0807_CHA_DELTA_TALK"
+    },
+    {
+      "identificationName": "808_カイザーダイトークフラグ",
+      "id": "M0808_KAIZ_DYNA_TALK"
+    },
+    {
+      "identificationName": "0900_ＳＴＧメモリーフラグ",
+      "id": "M0900_STG_EXPL"
+    },
+    {
+      "identificationName": "0901_アシストクルーフラグ",
+      "id": "M0901_ASSIST_EXPL"
+    },
+    {
+      "identificationName": "0902_エース説明フラグ",
+      "id": "M0902_ACE_EXPL"
+    },
+    {
+      "identificationName": "0903_アシスト説明フラグ",
+      "id": "M0903_ASSISTGU_EXPL"
+    },
+    {
+      "identificationName": "0904_遺産説明フラグ",
+      "id": "M0904_LEGACY_EXPL"
+    },
+    {
+      "identificationName": "0905_レコード説明フラグ",
+      "id": "M0905_RECORD_EXPL"
+    },
+    {
+      "identificationName": "0911_レコードランクＣ",
+      "id": "M0911_REC_RANK_C"
+    },
+    {
+      "identificationName": "0912_レコードランクＢ",
+      "id": "M0912_REC_RANK_B"
+    },
+    {
+      "identificationName": "0913_レコードランクＡ",
+      "id": "M0913_REC_RANK_A"
+    },
+    {
+      "identificationName": "0914_レコードランクＳ",
+      "id": "M0914_REC_RANK_S"
+    },
+    {
+      "identificationName": "0915_レコードランクＳ２",
+      "id": "M0915_REC_RANK_S2"
+    },
+    {
+      "identificationName": "0916_レコードランクＳ３",
+      "id": "M0916_REC_RANK_S3"
+    },
+    {
+      "identificationName": "0917_レコードランクＳＸ",
+      "id": "M0917_REC_RANK_SX"
+    },
+    {
+      "identificationName": "0918_レコードＭＸＰ１",
+      "id": "M0918_REC_MXP_1"
+    },
+    {
+      "identificationName": "0919_レコードＭＸＰ２",
+      "id": "M0919_REC_MXP_2"
+    },
+    {
+      "identificationName": "0920_レコードＭＸＰ３",
+      "id": "M0920_REC_MXP_3"
+    },
+    {
+      "identificationName": "0921_レコードＣＲＥＤＩＴ１",
+      "id": "M0921_REC_CREDIT_1"
+    },
+    {
+      "identificationName": "0922_レコードＣＲＥＤＩＴ２",
+      "id": "M0922_REC_CREDIT_2"
+    },
+    {
+      "identificationName": "0923_レコードＣＲＥＤＩＴ３",
+      "id": "M0923_REC_CREDIT_3"
+    },
+    {
+      "identificationName": "0924_レコードＳＴＧ１",
+      "id": "M0924_REC_STG_1"
+    },
+    {
+      "identificationName": "0925_レコードＳＴＧ２",
+      "id": "M0925_REC_STG_2"
+    },
+    {
+      "identificationName": "9026_レコードＳＴＧ３",
+      "id": "M0926_REC_STG_3"
+    },
+    {
+      "identificationName": "0927_レコードＳＴＧ頂点",
+      "id": "M0927_REC_STG_TOP"
+    },
+    {
+      "identificationName": "0928_レコードＳＴＧ完了",
+      "id": "M0928_REC_STG_FULL"
+    },
+    {
+      "identificationName": "0929_レコードエース１",
+      "id": "M0929_REC_ACE_1"
+    },
+    {
+      "identificationName": "0930_レコードエース２",
+      "id": "M0930_REC_ACE_2"
+    },
+    {
+      "identificationName": "0931_レコード撃墜数１",
+      "id": "M0931_REC_SCORE_1"
+    },
+    {
+      "identificationName": "0932_レコード撃墜数２",
+      "id": "M0932_REC_SCORE_2"
+    },
+    {
+      "identificationName": "0933_レコード撃墜数３",
+      "id": "M0933_REC_SCORE_3"
+    },
+    {
+      "identificationName": "0934_レコードアシストＥＸ１",
+      "id": "M0934_REC_ASSI_1"
+    },
+    {
+      "identificationName": "0935_レコードアシストＥＸ２",
+      "id": "M0935_REC_ASSI_2"
+    },
+    {
+      "identificationName": "0936_レコードアシストコマンド１",
+      "id": "M0936_REC_ASSICO_1"
+    },
+    {
+      "identificationName": "0937_レコードアシストコマンド２",
+      "id": "M0937_REC_ASSICO_2"
+    },
+    {
+      "identificationName": "0938_レコードミッション数１",
+      "id": "M0938_REC_MISSION_1"
+    },
+    {
+      "identificationName": "0939_レコードミッション数２",
+      "id": "M0939_REC_MISSION_2"
+    },
+    {
+      "identificationName": "0963_DEMOセーブデータ確認",
+      "id": "M0963_EXIST_DEMOSAVE"
+    },
+    {
+      "identificationName": "0964_DEMOクリアデータ確認",
+      "id": "M0964_EXIST_DEMOCLEAR"
+    },
+    {
+      "identificationName": "0963_特典：プレイ報酬（１）",
+      "id": "M0963_DEMO_MISSION_1"
+    },
+    {
+      "identificationName": "0964_特典：プレイ報酬（２）",
+      "id": "M0964_DEMO_MISSION_2"
+    }
+  ],
+  "listAllyRankValue": [
+    {
+      "identificationName": "戦力値の閾値",
+      "id": "Rank",
+      "Values": [
+        3100000,
+        2600000,
+        2100000,
+        1600000,
+        1100000,
+        600000,
+        100000,
+        0
+      ]
+    }
+  ]
+}

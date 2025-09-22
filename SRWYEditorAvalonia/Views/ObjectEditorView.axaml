@@ -1,0 +1,111 @@
+<UserControl
+    x:Class="SRWYEditorAvalonia.Views.ObjectEditorView"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:dataTemplates="using:SRWYEditorAvalonia.DataTemplates"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:u="https://irihi.tech/ursa"
+    xmlns:views="using:SRWYEditorAvalonia.Views"
+    xmlns:vm="using:SRWYEditorAvalonia.ViewModels"
+    mc:Ignorable="d">
+    <TreeView x:DataType="vm:DataEditorWindowViewModel" ItemsSource="{Binding RootNodes}">
+        <TreeView.DataTemplates>
+            <TreeDataTemplate DataType="vm:ObjectNodeViewModel" ItemsSource="{Binding Children}">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock
+                        Margin="0,0,5,0"
+                        VerticalAlignment="Center"
+                        FontWeight="Bold"
+                        Text="{Binding DisplayName}" />
+                    <u:IconButton
+                        VerticalAlignment="Center"
+                        Classes="Danger"
+                        Command="{Binding RemoveCommand}"
+                        Icon="{StaticResource SemiIconMinusCircle}"
+                        IsVisible="{Binding Removeable}" />
+                </StackPanel>
+
+            </TreeDataTemplate>
+
+            <TreeDataTemplate DataType="vm:CollectionNodeViewModel" ItemsSource="{Binding Children}">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock
+                        Margin="0,0,5,0"
+                        VerticalAlignment="Center"
+                        FontWeight="Bold"
+                        Text="{Binding DisplayName}" />
+                    <TextBlock
+                        Margin="0,0,5,0"
+                        VerticalAlignment="Center"
+                        Foreground="LightGray"
+                        Text="{Binding Count, StringFormat='{}{0} 个元素'}" />
+                    <u:IconButton
+                        VerticalAlignment="Center"
+                        Classes="Success"
+                        Command="{Binding AddChildCommand}"
+                        Icon="{StaticResource SemiIconPlusCircle}" />
+
+                </StackPanel>
+
+            </TreeDataTemplate>
+
+            <DataTemplate DataType="vm:DummyNodeViewModel">
+                <TextBlock Foreground="Gray" Text="{Binding DisplayName}" />
+            </DataTemplate>
+
+            <DataTemplate DataType="vm:EnumPropertyNodeViewModel">
+                <Grid ColumnDefinitions="200,*">
+                    <TextBlock
+                        Grid.Column="0"
+                        VerticalAlignment="Center"
+                        Text="{Binding DisplayName}" />
+                    <ComboBox
+                        Grid.Column="1"
+                        ItemsSource="{Binding EnumValues}"
+                        SelectedItem="{Binding Value, Mode=TwoWay}" />
+                </Grid>
+            </DataTemplate>
+
+            <DataTemplate DataType="vm:PropertyNodeViewModel">
+                <Grid ColumnDefinitions="200,*">
+                    <TextBlock
+                        Grid.Column="0"
+                        VerticalAlignment="Center"
+                        Text="{Binding DisplayName}" />
+                    <ContentControl Grid.Column="1" Content="{Binding, Mode=TwoWay}">
+                        <ContentControl.DataTemplates>
+                            <dataTemplates:ObjectEditorPropertyDataTemplateSelector>
+                                <DataTemplate x:Key="String" x:DataType="vm:PropertyNodeViewModel">
+                                    <TextBox Text="{Binding Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Watermark="Enter text..." />
+                                </DataTemplate>
+
+                                <DataTemplate x:Key="Byte" x:DataType="vm:PropertyNodeViewModel">
+                                    <u:NumericByteUpDown Step="1" Value="{Binding Value, Mode=TwoWay}" />
+                                </DataTemplate>
+
+                                <DataTemplate x:Key="Int" x:DataType="vm:PropertyNodeViewModel">
+                                    <u:NumericIntUpDown Step="1" Value="{Binding, Value, Mode=TwoWay}" />
+                                </DataTemplate>
+                                <DataTemplate x:Key="Other" x:DataType="vm:PropertyNodeViewModel">
+                                    <Label Classes="Solid Red" Theme="{StaticResource TagLabel}" />
+                                </DataTemplate>
+                            </dataTemplates:ObjectEditorPropertyDataTemplateSelector>
+
+                        </ContentControl.DataTemplates>
+                    </ContentControl>
+                </Grid>
+            </DataTemplate>
+
+
+
+        </TreeView.DataTemplates>
+        <TreeView.Styles>
+            <Style Selector="TreeViewItem">
+                <Setter x:DataType="vm:NodeViewModel" Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}" />
+            </Style>
+        </TreeView.Styles>
+    </TreeView>
+
+
+</UserControl>

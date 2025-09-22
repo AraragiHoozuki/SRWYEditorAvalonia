@@ -1,0 +1,30 @@
+<Window
+    x:Class="SRWYEditorAvalonia.BundleNamesWindow"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:u="https://irihi.tech/ursa"
+    Title="BundleNamesWindow"
+    SizeToContent="WidthAndHeight"
+    mc:Ignorable="d">
+    <StackPanel>
+        <TextBox
+            InnerLeftContent="Robot"
+            IsReadOnly="True"
+            Text="862c7887d89b02dc5798436613f93586" />
+        <TextBox
+            InnerLeftContent="Pilot"
+            IsReadOnly="True"
+            Text="4b11d42253f60e1ad6ae2fdf22bca2da" />
+        <TextBox
+            InnerLeftContent="Skill"
+            IsReadOnly="True"
+            Text="0004a3003148bb75ad0762163d5d7477" />
+        <TextBox
+            InnerLeftContent="Weapon"
+            IsReadOnly="True"
+            Text="b15d243e581cb8c0b543199ef3c39edf" />
+
+    </StackPanel>
+</Window>

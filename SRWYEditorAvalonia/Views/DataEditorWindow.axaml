@@ -1,0 +1,17 @@
+<Window
+    x:Class="SRWYEditorAvalonia.DataEditorWindow"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:u="https://irihi.tech/ursa"
+    xmlns:views="using:SRWYEditorAvalonia.Views"
+    xmlns:vm="using:SRWYEditorAvalonia.ViewModels"
+    Title="DataEditorWindow"
+    x:DataType="vm:DataEditorWindowViewModel"
+    SizeToContent="Width"
+    mc:Ignorable="d">
+    <Grid>
+        <views:ObjectEditorView DataContext="{Binding}" />
+    </Grid>
+</Window>
