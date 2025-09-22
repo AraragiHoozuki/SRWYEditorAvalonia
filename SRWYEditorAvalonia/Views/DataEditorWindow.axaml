@@ -11,7 +11,31 @@
     x:DataType="vm:DataEditorWindowViewModel"
     SizeToContent="Width"
     mc:Ignorable="d">
-    <Grid>
-        <views:ObjectEditorView DataContext="{Binding}" />
+    <Grid RowDefinitions="Auto,Auto,*">
+        <Grid x:DataType="vm:DataEditorWindowViewModel" ColumnDefinitions="*,Auto">
+            <TextBox Text="{Binding SearchText}" Watermark="搜索..." />
+            <u:IconButton
+                Grid.Column="1"
+                VerticalAlignment="Center"
+                Command="{Binding FindNextCommand}"
+                Icon="{StaticResource SemiIconSearch}" />
+        </Grid>
+        <Border
+            Grid.Row="1"
+            Padding="2,4,2,4"
+            Classes="Hover"
+            Theme="{StaticResource CardBorder}">
+            <Grid ColumnDefinitions="64,*">
+                <TextBlock Margin="0,0,0,0" Text="路径: " />
+                <u:Breadcrumb
+                    Grid.Column="1"
+                    x:DataType="vm:DataEditorWindowViewModel"
+                    CommandBinding="{Binding $parent[Window].((vm:DataEditorWindowViewModel)DataContext).SelectNodeCommand}"
+                    CommandParameterBinding="{Binding}"
+                    DisplayMemberBinding="{Binding DisplayName}"
+                    ItemsSource="{Binding NodePath}" />
+            </Grid>
+        </Border>
+        <views:ObjectEditorView Grid.Row="2" DataContext="{Binding}" />
     </Grid>
 </Window>

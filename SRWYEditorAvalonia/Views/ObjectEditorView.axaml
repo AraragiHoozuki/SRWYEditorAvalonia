@@ -9,7 +9,14 @@
     xmlns:views="using:SRWYEditorAvalonia.Views"
     xmlns:vm="using:SRWYEditorAvalonia.ViewModels"
     mc:Ignorable="d">
-    <TreeView x:DataType="vm:DataEditorWindowViewModel" ItemsSource="{Binding RootNodes}">
+
+
+
+    <TreeView
+        Grid.Row="2"
+        x:DataType="vm:DataEditorWindowViewModel"
+        ItemsSource="{Binding RootNodes}"
+        SelectedItem="{Binding SelectedNode}">
         <TreeView.DataTemplates>
             <TreeDataTemplate DataType="vm:ObjectNodeViewModel" ItemsSource="{Binding Children}">
                 <StackPanel Orientation="Horizontal">
@@ -23,7 +30,7 @@
                         Classes="Danger"
                         Command="{Binding RemoveCommand}"
                         Icon="{StaticResource SemiIconMinusCircle}"
-                        IsVisible="{Binding Removeable}" />
+                        IsVisible="{Binding IsListElement}" />
                 </StackPanel>
 
             </TreeDataTemplate>
@@ -88,7 +95,7 @@
                                     <u:NumericIntUpDown Step="1" Value="{Binding, Value, Mode=TwoWay}" />
                                 </DataTemplate>
                                 <DataTemplate x:Key="Other" x:DataType="vm:PropertyNodeViewModel">
-                                    <Label Classes="Solid Red" Theme="{StaticResource TagLabel}" />
+                                    <TextBlock Text="暂不支持的类型" />
                                 </DataTemplate>
                             </dataTemplates:ObjectEditorPropertyDataTemplateSelector>
 
@@ -106,6 +113,7 @@
             </Style>
         </TreeView.Styles>
     </TreeView>
+
 
 
 </UserControl>

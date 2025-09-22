@@ -4,15 +4,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using System.Numerics;
 using System.Reflection;
-using System.Runtime.CompilerServices;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Text.Json;
 using System.Threading.Tasks;
 using Ursa.Controls;
 
@@ -25,21 +17,30 @@ namespace SRWYEditorAvalonia.ViewModels
         [ObservableProperty]
         private bool isNative = true;
 
-        protected CollectionNodeViewModel? container;
+        protected NodeViewModel? container;
+        public NodeViewModel? Container => container;
 
         public ObservableCollection<NodeViewModel> Children { get; } = new();
 
         private bool isChildrenLoaded = false;
+        public bool IsChildrenLoaded => isChildrenLoaded;
 
         [ObservableProperty]
         private bool isExpanded;
-        public bool IsListElement => container != null;
+        public bool IsListElement => container != null && container is CollectionNodeViewModel;
         public bool Removeable => IsListElement && IsNative == false;
 
         partial void OnIsExpandedChanged(bool value)
         {
-            // 当节点首次展开时，加载其子节点
             if (value && !isChildrenLoaded)
+            {
+                isChildrenLoaded = true;
+                LoadChildren();
+            }
+        }
+        public void ForceLoadChildren()
+        {
+            if (!isChildrenLoaded)
             {
                 isChildrenLoaded = true;
                 LoadChildren();
@@ -50,8 +51,9 @@ namespace SRWYEditorAvalonia.ViewModels
         /// 子类重写此方法以实现懒加载
         /// </summary>
         protected virtual void LoadChildren() { }
+        public virtual void RemoveChild(NodeViewModel child) { }
 
-        
+
     }
 
     /// <summary>
@@ -78,7 +80,7 @@ namespace SRWYEditorAvalonia.ViewModels
         private readonly PropertyInfo propertyInfo;
         private readonly object owner;
 
-        public PropertyNodeViewModel(object owner, PropertyInfo propertyInfo, CollectionNodeViewModel? container = null)
+        public PropertyNodeViewModel(object owner, PropertyInfo propertyInfo, NodeViewModel? container = null)
         {
             this.owner = owner;
             this.propertyInfo = propertyInfo;
@@ -113,7 +115,7 @@ namespace SRWYEditorAvalonia.ViewModels
     {
         public IEnumerable EnumValues { get; }
 
-        public EnumPropertyNodeViewModel(object owner, PropertyInfo propertyInfo, CollectionNodeViewModel? container = null)
+        public EnumPropertyNodeViewModel(object owner, PropertyInfo propertyInfo, NodeViewModel? container = null)
             : base(owner, propertyInfo)
         {
             EnumValues = Enum.GetValues(propertyInfo.PropertyType);
@@ -129,13 +131,13 @@ namespace SRWYEditorAvalonia.ViewModels
         private readonly object sourceInstance;
         public object SourceInstance => sourceInstance;
 
-        public ObjectNodeViewModel(string name, object obj, CollectionNodeViewModel? container = null)
+        public ObjectNodeViewModel(string name, object obj, NodeViewModel? container = null)
         {
             DisplayName = name;
             sourceInstance = obj;
             this.container = container;
 
-            if (sourceInstance != null)
+            if (sourceInstance != null && sourceInstance.GetType() != typeof(string))
             {
                 Children.Add(new DummyNodeViewModel());
             }
@@ -143,18 +145,26 @@ namespace SRWYEditorAvalonia.ViewModels
 
         protected override void LoadChildren()
         {
-            Children.Clear();
-            var childNodes = ObjectEditorViewModelFactory.BuildViewModelNodes(sourceInstance);
-            foreach (var childNode in childNodes)
+            if (sourceInstance != null && sourceInstance.GetType() != typeof(string))
             {
-                Children.Add(childNode);
-            }
-        }
+                Children.Clear();
+                var childNodes = ObjectEditorViewModelFactory.BuildViewModelNodes(sourceInstance, this);
+                foreach (var childNode in childNodes)
+                {
 
-        [RelayCommand(CanExecute = nameof(Removeable))]
-        public void Remove()
+                    Children.Add(childNode);
+                }
+            }
+                
+        }
+        [RelayCommand]
+        public async Task Remove()
         {
-            container?.RemoveChild(this);
+            var result = await MessageBox.ShowAsync("删除后无法撤销，确认删除该元素？", "警告", MessageBoxIcon.Warning, MessageBoxButton.OKCancel);
+            if (result.HasFlag(MessageBoxResult.OK))
+            {
+                container?.RemoveChild(this);
+            }
         }
     }
 
@@ -169,7 +179,7 @@ namespace SRWYEditorAvalonia.ViewModels
 
         public bool Resizeable => !collection.IsFixedSize && !collection.IsReadOnly;
 
-        public CollectionNodeViewModel(string name, IList collection, CollectionNodeViewModel? container = null)
+        public CollectionNodeViewModel(string name, IList collection, NodeViewModel? container = null)
         {
             DisplayName = name;
             this.collection = collection;
@@ -254,12 +264,18 @@ namespace SRWYEditorAvalonia.ViewModels
             }
         }
 
-        public void RemoveChild(NodeViewModel child)
+        public override void RemoveChild(NodeViewModel child)
         {
             if (child is ObjectNodeViewModel objNode && collection.Contains(objNode.SourceInstance))
             {
+                var index = collection.IndexOf(objNode.SourceInstance);
                 collection.Remove(objNode.SourceInstance);
                 Children.Remove(objNode);
+                for (int i = index; i < Children.Count; i++)
+                {
+                    var item = Children[i];
+                    item.DisplayName = GetItemName(((ObjectNodeViewModel)item).SourceInstance, i);
+                }
                 OnPropertyChanged(nameof(Count));
             }
         }
@@ -272,7 +288,7 @@ namespace SRWYEditorAvalonia.ViewModels
     /// </summary>
     public static class ObjectEditorViewModelFactory
     {
-        public static ObservableCollection<NodeViewModel> BuildViewModelNodes(object instance)
+        public static ObservableCollection<NodeViewModel> BuildViewModelNodes(object instance, NodeViewModel? container = null)
         {
             var nodes = new ObservableCollection<NodeViewModel>();
             if (instance == null) return nodes;
@@ -284,12 +300,12 @@ namespace SRWYEditorAvalonia.ViewModels
                 if (!prop.CanRead) continue;
 
                 var value = prop.GetValue(instance);
-                nodes.Add(CreateNode(prop.Name, value, instance, prop));
+                nodes.Add(CreateNode(prop.Name, value, instance, prop, container));
             }
             return nodes;
         }
 
-        public static NodeViewModel CreateNode(string name, object value, object? owner = null, PropertyInfo? propInfo = null, CollectionNodeViewModel? container = null)
+        public static NodeViewModel CreateNode(string name, object value, object? owner = null, PropertyInfo? propInfo = null, NodeViewModel? container = null)
         {
             if (value == null)
             {
